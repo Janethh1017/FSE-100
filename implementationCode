@@ -77,8 +77,8 @@ try:
             # Ultrasonic sensors
             for i in range(3):
                 distance = measure_distance(ULTRASONIC_PINS[i][0], ULTRASONIC_PINS[i][1])
-                if distance < 30:
-                    # Vibrate motor if distance is less than 30cm
+                if distance < 50:
+                    # Vibrate motor if distance is less than 50cm
                     vibrate_motor(VIBRATION_MOTORS_PINS[i], 0.5)  # Vibrate for 0.5 seconds
             
             # IR sensors
